@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/color2"
+    android:orientation="vertical"
+    android:padding="@dimen/dp_30"
+    tools:context=".Activity.ActivityDeclaretion"
+    android:id="@+id/myLnDeclare">
+    <TextView
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Khai báo thông tin cá nhân"
+        android:textColor="@color/colorBlack"
+        android:textStyle="bold"
+        android:textSize="@dimen/sp_18"/>
+
+    <com.google.android.material.textfield.TextInputLayout
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorBlackLight"
+        android:layout_marginTop="@dimen/dp_30">
+    <EditText
+        android:id="@+id/edtnameDecalre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Họ và Tên"
+        android:ems="10"
+        android:inputType="text"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/sp_18"/>
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorBlackLight"
+        android:layout_marginTop="@dimen/dp_3">
+        <EditText
+            android:id="@+id/edtcccdDeclare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số CMT/CCCD"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/colorBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <LinearLayout
+        android:layout_width="@dimen/dp_350dp"
+        android:layout_height="wrap_content">
+               <RadioGroup
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:orientation="horizontal"
+                   android:layout_marginTop="@dimen/dp_12">
+                   <TextView
+                       android:layout_width="wrap_content"
+                       android:layout_height="wrap_content"
+                       android:text="Giới tính"
+                       android:textSize="@dimen/sp_18"
+                       android:textColor="@color/colorBlackLight"
+                       />
+               <RadioButton
+                   android:id="@+id/rbnmale"
+                   android:checked="true"
+                  android:layout_marginLeft="@dimen/dp_12"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Nam"
+                   android:textColor="@color/colorBlackLight"/>
+               <RadioButton
+                   android:id="@+id/rbnfemale"
+                   android:textColor="@color/colorBlackLight"
+                   android:layout_marginLeft="@dimen/dp_12"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="Nữ"
+                   app:layout_constraintStart_toStartOf="parent" />
+               </RadioGroup>
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorBlackLight"
+        android:layout_marginTop="@dimen/dp_3">
+        <EditText
+            android:id="@+id/edtaddressDeclare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Địa chỉ"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/colorBlack"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorBlackLight"
+        android:layout_marginTop="@dimen/dp_3">
+        <EditText
+            android:id="@+id/edtphonenumberDeclare"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Số điện thoại"
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/colorBlack"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:focusable="true"
+        android:focusableInTouchMode="true"
+        android:textColorHint="@color/colorBlackLight"
+        android:layout_marginTop="@dimen/dp_3">
+        <EditText
+            android:id="@+id/edtdate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="Ngày sinh "
+            android:ems="10"
+            android:inputType="text"
+            android:textSize="@dimen/sp_18"
+            android:textColor="@color/colorBlack"/>
+    </com.google.android.material.textfield.TextInputLayout>
+    <Button
+        android:id="@+id/btnSubmit"
+        android:background="@drawable/custom_button_next"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_30"
+        android:layout_gravity="center"
+        android:text="Tiếp tục" />
+    <Button
+        android:id="@+id/btnCancel"
+        android:background="@drawable/custom_button_next"
+        android:layout_width="@dimen/dp_256"
+        android:layout_height="@dimen/dp_40"
+        android:layout_marginTop="@dimen/dp_20"
+       android:layout_gravity="center"
+        android:text="Xong" />
+
+
+</LinearLayout>

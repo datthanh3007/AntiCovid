@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Anti Covid19</string>
+    <string name="action_home">Trang chủ</string>
+    <string name="news">Tin Tức</string>
+    <string name="statistic">Thống Kê</string>
+    <string name="FAQ">Câu hỏi thường gặp</string>
+    <string name="radio_button_vietnamese">Việt Nam</string>
+    <string name="radio_button_worlds">Thế giới</string>
+    <string name="text_case_update">Cập nhật</string>
+    <string name="text_see_detail">Chi tiết</string>
+    <string name="text_infected">Ca nhiễm</string>
+    <string name="text_recovered">Phục hồi</string>
+    <string name="text_loading">Đang tải</string>
+    <string name="text_plus_information">+%d</string>
+    <string name="text_information">%d</string>
+    <string name="text_sort">Sort</string>
+    <string name="text_hint_search_country">Tìm quốc gia</string>
+    <string name="text_country_code">(%s)</string>
+    <string name="text_symptoms">Symptoms</string>
+    <string name="text_prevention_tips">Prevention tips</string>
+    <string name="text_are_you_fill_sick">Are you fill sick?</string>
+    <string name="text_head_notification">Have new %d infected</string>
+    <string name="text_body_notification">, %d death</string>
+    <string name="text_end_notification">, %d recovered in Viet Nam</string>
+    <string name="title_statistics">Thống kê</string>
+    <string name="title_home">Trang chủ</string>
+    <string name="title_news">Tin tức</string>
+    <string name="title_detail_counties_screen">Chi tiết quốc gia</string>
+    <string name="title_news_screen">Tin Tức</string>
+    <string name="title_notification">Cập nhật</string>
+    <string name="text_death">Tử vong</string>
+    <string name="text_all_you_need">All you need</string>
+    <string name="SOME_THING">SOME THING</string>
+    <string name="text_viewhistory">Lịch sử tiếp xúc</string>
+    <string name="text_faq">Câu hỏi thường gặp</string>
+    <string name="text_FAQ">FAQ</string>
+    <string name="nameDialog">Name</string>
+</resources>

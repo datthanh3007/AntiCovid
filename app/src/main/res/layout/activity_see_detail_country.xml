@@ -1,0 +1,251 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorPrimaryDark">
+
+    <androidx.constraintlayout.widget.Guideline
+        android:id="@+id/guidelineTop"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        app:layout_constraintGuide_begin="219dp"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+    <View
+        android:id="@+id/viewTop"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        app:layout_constraintBottom_toTopOf="@+id/guidelineTop"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:background="@drawable/img_anticovid"/>
+
+    <View
+        android:id="@+id/viewBottom"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:background="@drawable/view_bottom_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTop" />
+
+    <View
+        android:id="@+id/viewTitle"
+        android:layout_width="0dp"
+        android:layout_height="@dimen/dp_50"
+        android:layout_marginStart="@dimen/dp_50"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_50"
+        android:background="@drawable/radio_group_background"
+        android:orientation="horizontal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTop">
+        
+    </View>
+
+    <TextView
+        android:id="@+id/textViewCaseUpdate"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_24"
+        android:text="Cập nhật"
+        android:textColor="@android:color/black"
+        android:textSize="@dimen/sp_18"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/viewTitle" />
+    <!--        android:text="@string/text_case_update"-->
+    <TextView
+        android:id="@+id/textViewUpdateTime"
+        android:textColor="@color/color6"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_36"
+        android:layout_marginTop="@dimen/dp_5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCaseUpdate" />
+    
+    <View
+        android:id="@+id/viewStatistics"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="@dimen/dp_20"
+        android:layout_marginTop="@dimen/dp_20"
+        android:layout_marginEnd="@dimen/dp_20"
+        android:layout_marginBottom="@dimen/dp_20"
+        android:background="@drawable/view_background"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="1.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textViewUpdateTime"
+        app:layout_constraintVertical_bias="1.0" />
+
+    <TextView
+        android:id="@+id/textviewInfected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Nhiễm bệnh"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/viewStatistics"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalInfected"
+        app:layout_constraintStart_toStartOf="@+id/txtTotalInfected"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalInfected" />
+    <!--        android:text="@string/text_infected"-->
+    <TextView
+        android:id="@+id/textViewDeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+          android:text="Tử vong"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/viewStatistics"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalDeath"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalInfected"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalDeath" />
+    <!--        android:text="@string/text_death"-->
+    <TextView
+        android:id="@+id/txtTotalInfected"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorOrange"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toTopOf="@+id/textviewInfected"
+        app:layout_constraintEnd_toStartOf="@+id/txtTotalDeath"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        app:layout_constraintStart_toStartOf="@+id/viewStatistics"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewInfected" />
+
+    <TextView
+        android:id="@+id/txtTotalDeath"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorRed"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toTopOf="@+id/textViewDeath"
+        app:layout_constraintEnd_toStartOf="@+id/txtTotalRecovered"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalInfected"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewDeath" />
+
+    <TextView
+        android:id="@+id/textViewRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+android:text="Hồi phục"
+        android:textColor="@android:color/black"
+        app:layout_constraintBottom_toBottomOf="@+id/viewStatistics"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalRecovered"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalDeath"
+        app:layout_constraintTop_toBottomOf="@+id/txtTotalRecovered" />
+    <!--        android:text="@string/text_recovered"-->
+    <TextView
+        android:id="@+id/txtTotalRecovered"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:textColor="@color/colorGreen"
+        android:textSize="@dimen/sp_20"
+        app:layout_constraintBottom_toTopOf="@+id/textViewRecovered"
+        app:layout_constraintEnd_toEndOf="@+id/viewStatistics"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalDeath"
+        app:layout_constraintTop_toBottomOf="@+id/txtNewRecovered" />
+
+    <TextView
+        android:id="@+id/txtNewInfected"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorOrange"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotalInfected"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalInfected"
+        app:layout_constraintStart_toStartOf="@+id/txtTotalInfected"
+        app:layout_constraintTop_toBottomOf="@+id/buttonInfected" />
+
+    <TextView
+        android:id="@+id/txtNewRecovered"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorGreen"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotalRecovered"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalRecovered"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalDeath"
+        app:layout_constraintTop_toBottomOf="@+id/buttonRecovered" />
+
+    <TextView
+        android:id="@+id/txtNewDeath"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="@color/colorRed"
+        app:layout_constraintBottom_toTopOf="@+id/txtTotalDeath"
+        app:layout_constraintEnd_toEndOf="@+id/textViewDeath"
+        app:layout_constraintStart_toStartOf="@+id/textViewDeath"
+        app:layout_constraintTop_toBottomOf="@+id/buttonDeath" />
+
+    <TextView
+        android:id="@+id/titleStatisticScreen"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/dp_24"
+        android:layout_marginTop="@dimen/dp_8"
+        android:text="@string/title_statistics"
+        android:textColor="@android:color/white"
+        android:textSize="@dimen/sp_25"
+        app:layout_constraintStart_toStartOf="@+id/viewTop"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
+    <Button
+        android:id="@+id/buttonInfected"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:background="@drawable/btn_infected_background"
+        app:layout_constraintBottom_toTopOf="@+id/txtNewInfected"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalInfected"
+        app:layout_constraintStart_toStartOf="@+id/txtTotalInfected"
+        app:layout_constraintTop_toTopOf="@+id/viewStatistics" />
+
+    <Button
+        android:id="@+id/buttonDeath"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:background="@drawable/btn_death_background"
+        app:layout_constraintBottom_toTopOf="@+id/txtNewDeath"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalDeath"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalInfected"
+        app:layout_constraintTop_toTopOf="@+id/viewStatistics" />
+
+    <Button
+        android:id="@+id/buttonRecovered"
+        android:layout_width="@dimen/dp_24"
+        android:layout_height="@dimen/dp_24"
+        android:background="@drawable/btn_recovered_background"
+        app:layout_constraintBottom_toTopOf="@+id/txtNewRecovered"
+        app:layout_constraintEnd_toEndOf="@+id/txtTotalRecovered"
+        app:layout_constraintStart_toEndOf="@+id/txtTotalDeath"
+        app:layout_constraintTop_toTopOf="@+id/viewStatistics" />
+
+    <TextView
+        android:id="@+id/txtCountriesName"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="252dp"
+        android:gravity="center"
+        android:textColor="@color/colorBlack"
+        android:textSize="@dimen/dp_20"
+        android:textStyle="normal"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.501"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/viewTop" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

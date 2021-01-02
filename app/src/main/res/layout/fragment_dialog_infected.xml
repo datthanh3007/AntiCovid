@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    tools:context=".Fragment.fragmentDialogInfected"
+    android:background="@drawable/custom_dialog_infected"
+    >
+
+    <LinearLayout
+        android:layout_width="@dimen/dp_380"
+        android:layout_height="310dp"
+        android:orientation="vertical"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.494"
+        app:layout_constraintStart_toStartOf="parent"
+       >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@drawable/custom_top_left_right_dialog_infected">
+            <TextView
+                android:id="@+id/txtTitleDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginStart="@dimen/dp_153"
+                android:text="Thông tin"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:background="@color/black_trans">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="Tên BN :"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/nameDialog"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_24"
+                android:layout_marginTop="@dimen/dp_8"
+
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_62"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@color/black_trans">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="Địa chỉ :"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/txtAddress"
+                android:layout_marginLeft="@dimen/dp_12"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_8"
+
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_40"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@color/black_trans">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="Thời gian :"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/txttime"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_12"
+                android:layout_marginTop="@dimen/dp_8"
+                android:textColor="@color/colorBlack" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="@dimen/dp_80"
+            android:layout_marginTop="@dimen/dp_2"
+            android:background="@color/black_trans">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_8"
+                android:layout_marginTop="@dimen/dp_8"
+                android:text="Ghi chú :"
+                android:textColor="@color/colorBlack" />
+
+            <TextView
+                android:id="@+id/txtNote"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="@dimen/dp_26"
+                android:layout_marginTop="@dimen/dp_8"
+                android:textColor="@color/colorBlack" />
+
+        </LinearLayout>
+        <Button
+            android:id="@+id/btnback"
+            android:layout_marginTop="@dimen/dp_8"
+            android:textStyle="bold"
+            android:text="Xong"
+            android:background="@drawable/custom_button_next"
+            android:layout_gravity="center"
+            android:layout_width="@dimen/dp_180"
+            android:layout_height="@dimen/dp_30"
+            />
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

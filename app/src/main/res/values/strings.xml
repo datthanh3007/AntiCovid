@@ -1,0 +1,47 @@
+<resources>
+    <string name="app_name">ENDCOVI</string>
+    <string name="action_home">HOME</string>
+    <string name="news">NEWS</string>
+    <string name="statistic">Statistic</string>
+    <string name="text_faq">Frequently Asked Questions</string>
+    <string name="text_FAQ">FAQ</string>
+    <string name="radio_button_vietnamese">Vietnamese</string>
+    <string name="radio_button_worlds">Worlds</string>
+    <string name="text_case_update">Case Update</string>
+    <string name="text_see_detail">See Detail</string>
+    <string name="text_infected">Infected</string>
+    <string name="text_recovered">Recovered</string>
+    <string name="text_loading">Loading…</string>
+    <string name="text_plus_information">+%d</string>
+    <string name="text_information">%d</string>
+    <string name="text_sort">Sort</string>
+
+    <string name="text_viewhistory">View History</string>
+
+    <string name="text_hint_search_country">Search country…</string>
+    <string name="text_country_code">(%s)</string>
+    <string name="text_symptoms">Symptoms</string>
+    <string name="text_prevention_tips">Prevention tips</string>
+    <string name="text_are_you_fill_sick">Are you fill sick?</string>
+    <string name="text_head_notification">Have new %d infected</string>
+    <string name="text_body_notification">, %d death</string>
+    <string name="text_end_notification">, %d recovered in Viet Nam</string>
+
+    <string name="title_statistics">Statistics</string>
+    <string name="title_home">Home</string>
+    <string name="title_news">News</string>
+    <string name="title_detail_counties_screen">Detail Countries</string>
+    <string name="title_news_screen">News</string>
+    <string name="title_notification">Update</string>
+    <string name="text_death">Death</string>
+    <string name="text_all_you_need">All you need</string>
+    <string name="SOME_THING">SOME THING</string>
+    <string name="map_api_key" translatable="false">AIzaSyBravKiq49wotirmpAJNxpyvkvBtSMqZ3E</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="nameDialog" translatable="false">Tên</string>
+    <string name="FAQ">FAQ</string>
+    <string name="channel_name">Testing</string>
+    <string name="channel_description">Testing Notification Channel</string>
+
+
+</resources>
